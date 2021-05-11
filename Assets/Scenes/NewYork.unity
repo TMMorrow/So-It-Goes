@@ -2428,8 +2428,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 102407655}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 500, y: 2, z: 505}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalPosition: {x: 525, y: 2, z: 504}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -10241,6 +10241,66 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efe06c0608269fb45a852b9c1aff7526, type: 3}
+--- !u!1 &546610919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 546610922}
+  - component: {fileID: 546610921}
+  - component: {fileID: 546610920}
+  m_Layer: 0
+  m_Name: Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &546610920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546610919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a15a350128a48b4fb6a8ef46a9b7330, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  top: {fileID: 676665930}
+  bottom: {fileID: 1354694330}
+  fadeIn: {fileID: 1724365426}
+--- !u!65 &546610921
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546610919}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &546610922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546610919}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 533, y: 6, z: 501}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &546756006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11162,7 +11222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11437536, guid: 69b40ef7ee16c834c844b3fa26e0fdda, type: 3}
       propertyPath: RainIntensity
-      value: 0
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 11437536, guid: 69b40ef7ee16c834c844b3fa26e0fdda, type: 3}
       propertyPath: FollowCamera
@@ -11175,11 +11235,11 @@ PrefabInstance:
     - target: {fileID: 11437536, guid: 69b40ef7ee16c834c844b3fa26e0fdda, type: 3}
       propertyPath: RainSoundLight
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 60925deb2370ba34e8de46b6a0853774, type: 3}
     - target: {fileID: 11437536, guid: 69b40ef7ee16c834c844b3fa26e0fdda, type: 3}
       propertyPath: RainSoundMedium
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 60925deb2370ba34e8de46b6a0853774, type: 3}
     - target: {fileID: 11437536, guid: 69b40ef7ee16c834c844b3fa26e0fdda, type: 3}
       propertyPath: WindSound
       value: 
@@ -11188,6 +11248,10 @@ PrefabInstance:
       propertyPath: RainForwardOffset
       value: -6
       objectReference: {fileID: 0}
+    - target: {fileID: 11437536, guid: 69b40ef7ee16c834c844b3fa26e0fdda, type: 3}
+      propertyPath: RainSoundHeavy
+      value: 
+      objectReference: {fileID: 8300000, guid: c980eda1ec9b9ff4b930005976b00f41, type: 3}
     - target: {fileID: 11482444, guid: 69b40ef7ee16c834c844b3fa26e0fdda, type: 3}
       propertyPath: RainExplosion
       value: 
@@ -11222,7 +11286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19831730, guid: 69b40ef7ee16c834c844b3fa26e0fdda, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 0.15
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 19831730, guid: 69b40ef7ee16c834c844b3fa26e0fdda, type: 3}
       propertyPath: InitialModule.startColor.maxColor.a
@@ -11266,7 +11330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19948124, guid: 69b40ef7ee16c834c844b3fa26e0fdda, type: 3}
       propertyPath: m_MaxParticleSize
-      value: 60
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 19948124, guid: 69b40ef7ee16c834c844b3fa26e0fdda, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -11274,7 +11338,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 0430d93c97116934491407b8e9a71af2, type: 2}
     - target: {fileID: 19948124, guid: 69b40ef7ee16c834c844b3fa26e0fdda, type: 3}
       propertyPath: m_LengthScale
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69b40ef7ee16c834c844b3fa26e0fdda, type: 3}
@@ -28262,9 +28326,9 @@ GameObject:
   - component: {fileID: 1500158446}
   - component: {fileID: 1500158445}
   - component: {fileID: 1500158443}
-  - component: {fileID: 1500158442}
   - component: {fileID: 1500158444}
   - component: {fileID: 1500158448}
+  - component: {fileID: 1500158442}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -28281,16 +28345,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1500158441}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a15a350128a48b4fb6a8ef46a9b7330, type: 3}
+  m_Script: {fileID: 11500000, guid: 71ec661020ae1c5418262f5a03d155df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locationObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  locationTime:
-  - 40
-  - 20
-  currentLevel: 0
   top: {fileID: 676665930}
   bottom: {fileID: 1354694330}
   fadeIn: {fileID: 1724365426}
@@ -33527,7 +33584,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 5
-  MaxDistance: 50
+  MaxDistance: 70
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
