@@ -39,4 +39,4 @@ MonoBehaviour:
   multiScatteringEC: 0.5
   silverSpread: 0.1
   atmosphereSaturateDistance: 60000
-  atmosphereColor: {r: 0.627451, g: 0.7058824, b: 0.78431374, a: 1}
+  atmosphereColor: {r: 0.28868517, g: 0.31887087, b: 0.3490566, a: 1}
