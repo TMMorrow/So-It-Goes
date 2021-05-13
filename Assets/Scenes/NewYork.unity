@@ -28364,8 +28364,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainView: {fileID: 1724873949}
-  movementSpeed: 5
-  mouseSensitivity: 100
+  movementSpeed: 4
+  mouseSensitivity: 30
   jumpHeight: 10
   gravityMult: 2
   timeBetweenFootstepsInSeconds: 0

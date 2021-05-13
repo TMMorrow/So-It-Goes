@@ -11,6 +11,7 @@ public class TimeTransform : MonoBehaviour
     public Animator bottom;
     public Animator fadeIn;
     private static readonly int Level = Animator.StringToHash("NextLevel");
+    private static readonly int Dresden = Animator.StringToHash("Dresden");
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,6 +19,14 @@ public class TimeTransform : MonoBehaviour
         bottom.SetBool(Level, true);
         fadeIn.SetBool(Level, true);
         StartCoroutine(ChangeAnimation());
+    }
+
+    public void NextLevel()
+    {
+        top.SetBool(Level, true);
+        bottom.SetBool(Level, true);
+        fadeIn.SetBool(Level, true);
+        StartCoroutine(ChangeAnimation()); 
     }
 
     private IEnumerator ChangeAnimation()
@@ -34,6 +43,16 @@ public class TimeTransform : MonoBehaviour
         top.SetBool(Level, false);
         bottom.SetBool(Level, false);
         fadeIn.SetBool(Level, false);
+    }
+
+    public void DresdenFadeIn()
+    {
+        fadeIn.SetBool(Dresden, true);
+    }
+
+    public void DresdenFadeOut()
+    {
+        fadeIn.SetBool(Dresden, false);
     }
     
 }

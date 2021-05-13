@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5676874368504323885}
   - component: {fileID: 5290616017193316416}
   - component: {fileID: 138276590924538779}
+  - component: {fileID: 8257451359053271438}
   m_Layer: 0
   m_Name: chicken_leg_geo
   m_TagString: Untagged
@@ -81,6 +82,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8257451359053271438
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898606605289777459}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4331594181479930058, guid: 974f8bbb72241784e8aa90cb1f6a81d5, type: 3}
 --- !u!1 &1021358080598360557
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,7 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 389358438418357079}
   m_Layer: 0
-  m_Name: MeatHook 1
+  m_Name: MeatHook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
